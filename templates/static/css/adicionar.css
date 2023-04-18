@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+form [type="submit"]{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(132,14,201);
+    color: white;
+    font: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border-color: rgb(132,14,201);
+    font-size: 25px;
+}
+
+form [type="text"] {
+    color:rgb(132,14,201) ;
+}
+
+input::placeholder {
+    color: rgb(132,14,201);
+}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'head'%}
+<link rel="stylesheet" href="{% static 'css/nao_infectados.css' %}">
+{% endblock %}
+
+{% block 'conteudo'%}
+  {% if sobreviventes %}
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Sexo</th>
+        <th>Localização</th>
+        <th>Pontos</th>
+        <th>Denuncias</th>
+        <th>Infectado</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for sobrevivente in sobreviventes %}
+      <tr>
+        <td>{{ sobrevivente.id }}</td>
+        <td>{{ sobrevivente.nome }}</td>
+        <td>{{ sobrevivente.idade }}</td>
+        <td>{{ sobrevivente.sexo }}</td>
+        <td>{{ sobrevivente.localizacao }}</td>
+        <td>{{ sobrevivente.pontos }}</td>
+        <td>{{ sobrevivente.denuncias }}</td>
+        <td>{{ sobrevivente.infectado }}</td>
+        <td>
+          <a href="{% url 'atualizar_sobrevivente' sobrevivente.id %}" id="atualizar">Atualizar</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  {% else %}
+    <p>Não há sobreviventes não infectados.</p>
+  {% endif %}
+{%endblock%}
+

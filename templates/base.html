@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}" >
+  <title>Survivo Zone</title>
+
+  {% block 'head'%}
+
+  {% endblock %}  
+</head>
+<body>
+  <header>
+    <div id="title">
+        <h1>Survivo</h1>
+        <h1>Zone</h1>
+    </div>
+
+    <ul>
+        <a href="{% url 'home' %}"><li>Home</li></a>
+        <a href="{% url 'adicionar_sobrevivente' %}"><li>Adicionar</li></a>
+        <a href="{% url 'lista_nao_infectados' %}"><li>Lista Sobreviventes</li></a>
+        <a href="{% url 'lista_infectados' %}"><li>Infectados</li></a>
+        <a href="{% url 'dados'%}" id="dados"><li>Dados</li></a>
+    </ul>
+
+</header>
+
+<main>
+    <aside>
+    </aside>
+
+{% block 'conteudo'%}
+
+{%endblock%}
+
+
+</main>
+</body>
+</html>

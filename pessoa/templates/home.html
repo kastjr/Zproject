@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'head'%}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}  
+
+{% block 'conteudo'%}
+<div class="row" id="inicial">
+    <h1>OLÁ SOBREVIVENTE , SEJA BEM VINDO !!</h1>
+    <img src="/media/teste.jpg" alt="teste" id="abertura">
+    <h2>Esse é seu site de sobrevivência , lute com a gente !</h2>
+
+    <div>
+        <h2>------------------------- SISTEMAS DOS SOBREVIVENTES -------------------------</h2>
+        <ul id="servicos">
+            <a href="{% url 'adicionar_sobrevivente' %}"><li id="ll">ADICIONAR</li></a>
+            <a href="{% url 'lista_nao_infectados' %}"><li id="b">LISTA SOBREVIVENTES</li>
+            <a href="{% url 'lista_infectados' %}"><li id="i">INFECTADOS</li></a>
+            <a href="{% url 'dados'%}"><li id="d">DADOS</li></a>
+        </ul>
+    </div>
+    
+</div>
+{%endblock%}
+
+

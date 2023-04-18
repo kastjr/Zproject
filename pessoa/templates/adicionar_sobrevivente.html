@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'head'%}
+<link rel="stylesheet" href="{% static 'css/adicionar.css' %}">
+{% endblock %}
+
+{% block 'conteudo'%}
+
+  <form method="post">
+    {% csrf_token %}
+
+    <input id="nome" type="text" placeholder="Nome">
+
+    <input id="idade" type="text" placeholder="Idade">
+
+    <input id="sexo" type="text" placeholder="Sexo (M) ou (F)">
+
+    <input id="localizacao" type="text" placeholder="Localização">
+
+    <input id="agua" type="text" placeholder="Agua">
+
+    <input id="medicamento" type="text" placeholder="Medicamento">
+
+    <input id="comida" type="text" placeholder="Comida">
+
+    <input id="municao" type="text" placeholder="Munição">
+
+    <input type="submit" value="Adicionar">
+  </form>
+{%endblock%}
+  

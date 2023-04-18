@@ -1,0 +1,28 @@
+table {
+    margin: 0 auto;
+  }
+  
+  th, td {
+    padding: 30px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #201e1e;
+  }
+  
+  th {
+    background-color:  #201e1e;
+  }
+
+  #atualizar {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+
+  #atualizar:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+  }
+  

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block 'conteudo'%}
+<form method="post">
+  {% csrf_token %}
+  <label for="localizacao">Localização:</label><br>
+  <input type="text" id="localizacao" name="localizacao" value="{{ sobrevivente.localizacao }}"><br>
+  <label for="denuncias">Denúncias:</label><br>
+  <input type="number" id="denuncias" name="denuncias" value="{{ sobrevivente.denuncias }}"><br><br>
+  <input type="submit" value="Atualizar">
+</form>
+{%endblock%}

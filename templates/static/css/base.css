@@ -1,0 +1,51 @@
+body{
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: poppinsregular;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title{
+  flex-direction: column;
+  line-height: 10px;
+}
+
+li{
+  display: inline-block;
+  margin: 20px;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: rgb(132, 14, 201);
+  transition: 0.3s all;
+}
+
+#dados {
+  border: 2px solid rgb(132, 14, 201);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#dados:hover {
+  background-color: rgb(132, 14, 201);
+  color: white;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
