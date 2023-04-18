@@ -10,22 +10,22 @@
 
   <form method="post">
     {% csrf_token %}
+    
+    <input type="text" id="nome" name="nome" placeholder="Nome"><br>
 
-    <input id="nome" type="text" placeholder="Nome">
+    <input type="number" id="idade" name="idade" placeholder="Idade"><br>
 
-    <input id="idade" type="text" placeholder="Idade">
+    <input type="text" id="sexo" name="sexo" placeholder="Sexo (M) ou (F)"><br>
 
-    <input id="sexo" type="text" placeholder="Sexo (M) ou (F)">
+    <input type="text" id="localizacao" name="localizacao" placeholder="Localização"><br>
 
-    <input id="localizacao" type="text" placeholder="Localização">
+    <input type="number" id="agua" name="agua" placeholder="Agua"><br>
 
-    <input id="agua" type="text" placeholder="Agua">
+    <input type="number" id="medicamento" name="medicamento" placeholder="Medicamento"><br>
 
-    <input id="medicamento" type="text" placeholder="Medicamento">
+    <input type="number" id="comida" name="comida" placeholder="Comida"><br>
 
-    <input id="comida" type="text" placeholder="Comida">
-
-    <input id="municao" type="text" placeholder="Munição">
+    <input type="number" id="municao" name="municao" placeholder="Munição"><br>
 
     <input type="submit" value="Adicionar">
   </form>

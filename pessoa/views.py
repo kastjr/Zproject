@@ -88,4 +88,5 @@ def dados(request):
 
 
 
-
+def troca(request):
+    return render(request, 'troca.html')
